@@ -6,13 +6,15 @@ import {
 } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 
-const ScarletScreen = () => {
+const GrayScreen = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container}
+
+    >
       <Text style={styles.welcome}
-      onPress={()=>Actions.gray()}
+      onPress={()=>Actions.scarlet()}
       >
-        Scarlet Screen
+        Gray Screen
       </Text>
     </View>
   );
@@ -23,7 +25,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#bb0000',
+    backgroundColor: '#5e5e5e',
   },
   welcome: {
     fontSize: 20,
@@ -33,4 +35,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ScarletScreen;
+export default GrayScreen;
